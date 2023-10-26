@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Examination System</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">
+          <img src="assets/img/icon-inverse.png" alt="..." />
+          Examination System
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Our Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle nav-link bg-transparent border-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Login
+                </button>
+                <ul class="dropdown-menu bg-opacity-75 bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item nav-link"
+                      href="main.php"
+                      data-bs-toggle="modal"
+                      data-bs-target="#unavailable"
+                      >User login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nav-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#unavailable"
+                      >Admin login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container px-4 px-lg-5 h-100">
+        <div
+          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">
+              Contact our support team
+            </h1>
+            <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+            <p class="text-white-75 mb-5">
+              Our support team can help you with any questions you may have.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">Contact form</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">
+              Need help? Fill out the form below and our support team will get
+              your message.
+            </p>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <form id="contactForm">
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required
+                />
+                <label for="name">Full name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="mail@mail.kz"
+                  required
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="+7 (777) 777 77 77"
+                  required
+                />
+                <label for="phone">Phone number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary btn-xl"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-phone fs-2 mb-3 text-muted"></i>
+            <div><a href="tel:+7 (7172) 12 55 55">+7 (7172) 12 55 55</a></div>
+          </div>
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-envelope fs-2 mb-3 text-muted"></i>
+            <div><a href="mailto:abzalorazbek2003@gmail.com">abzalorazbek2003@gmail.com</a></div>
+          </div>
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-telegram fs-2 mb-3 text-muted"></i>
+            <div><a href="https://t.me/abzal_orazbek">@abzal_orazbek</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-light py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="small text-center text-muted">
+          Copyright &copy; 2023 - Examination System
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="unavailable" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="unavailable">Unavailable</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Unfortunately, server is not available right now. We are sorry for
+            any inconvenience
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
