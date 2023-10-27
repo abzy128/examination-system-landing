@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   document.body
     .querySelector("i.bi-telegram")
-    .addEventListener("mouseover", function (event) {
+    .addEventListener("click", function (event) {
       alert("Please do not disturb after 10pm");
     });
 
@@ -60,12 +60,30 @@ window.addEventListener("DOMContentLoaded", (event) => {
     console.log("Form was submitted");
   });
 
-  $("#email").click(function () {
-    $("#email").toggleClass("rotate");
+  var active = false;
+  var copyright = $("#copyright");
+  copyright.on("click", function () {
+    if (active) {
+      copyright.removeClass("pulse");
+      active = false;
+    } else {
+      copyright.addClass("pulse");
+      active = true;
+    }
   });
   
+  var isActive = false;
+  var form = $("input");
+  form.on("click", function () {
+    if (isActive) {
+      form.removeClass("pulse");
+      isActive = false;
+    } else {
+      form.addClass("pulse");
+      isActive = true;
+    }
+  });
 });
-
 
 function playSound() {
   new Audio("assets/sound/f1_team_radio.mp3").play();
