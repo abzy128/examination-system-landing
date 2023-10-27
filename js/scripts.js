@@ -65,9 +65,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
   copyright.on("click", function () {
     if (active) {
       copyright.removeClass("pulse");
+      copyright.text("Copyright © 2023 - Examination System")
       active = false;
     } else {
       copyright.addClass("pulse");
+      copyright.text("I AM PULSING!")
       active = true;
     }
   });
