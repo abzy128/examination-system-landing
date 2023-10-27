@@ -39,14 +39,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
     elements: "#about a.about-box",
   });
 
-  document.body
-    .querySelector("i.bi-telegram")
-    .addEventListener("click", function (event) {
+  var telegram = document.body.querySelector("i.bi-telegram");
+  if (telegram != null) {
+    telegram.addEventListener("click", function (event) {
       alert("Please do not disturb after 10pm");
     });
+  }
 
   addEventListener("keydown", function (event) {
-    console.log("You pressed: " + event.key);
+    if (event.key === "l" || event.key === "L") {
+      $("#unavailable").modal("toggle");
+    }
+    if(event.key === "p" || event.key === "P") {
+      playSound();
+    }
+    // Commented out because it was annoying
+    // if(event.key === "g" || event.key === "G") {
+    //   this.window.open("https://google.kz", "_blank")
+    // }
+    // if(event.key === "a" || event.key === "a") {
+    //   this.window.open("https://moodle.astanait.edu.kz", "_blank")
+    // }
   });
 
   $("document").ready(function () {
@@ -54,26 +67,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   $("#contactForm").submit(function (event) {
-    alert("Form was submitted");
+    event.preventDefault();
     var array = $("#contactForm").serializeArray();
+    var form = new FormResponse();
     console.log(array);
+    form.Name = array[0].value;
+    form.Email = array[1].value;
+    form.Phone = array[2].value;
+    form.Message = array[3].value;
+    console.log(form);
     console.log("Form was submitted");
+    alert("Form was submitted");
   });
 
   var active = false;
   var copyright = $("#copyright");
-  copyright.on("click", function () {
+  copyright.on("mouseover", function () {
     if (active) {
       copyright.removeClass("pulse");
-      copyright.text("Copyright © 2023 - Examination System")
+      copyright.text("Copyright © 2023 - Examination System");
       active = false;
     } else {
       copyright.addClass("pulse");
-      copyright.text("I AM PULSING!")
+      copyright.text("I AM PULSING!");
       active = true;
     }
   });
-  
+
   var isActive = false;
   var form = $("input");
   form.on("click", function () {
@@ -89,4 +109,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 function playSound() {
   new Audio("assets/sound/f1_team_radio.mp3").play();
+}
+
+class FormResponse {
+  Name = "";
+  Email = "";
+  Phone = "";
+  Message = "";
 }
