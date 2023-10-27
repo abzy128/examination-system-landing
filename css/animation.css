@@ -1,0 +1,13 @@
+.rotate {
+    animation-name: rotate-object;
+    animation-duration: 2s;
+}
+
+@keyframes rotate-object {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

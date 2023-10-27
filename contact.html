@@ -30,8 +30,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/animation.css" />
 
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body id="page-top">
     <nav
@@ -57,13 +58,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-home"></i> Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="clients.html">Our Clients</a>
+              <a class="nav-link" href="clients.html">
+                <i class="fa-solid fa-user"></i> Our Clients</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">
+                <i class="fa-solid fa-phone"></i> Contact</a
+              >
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -72,7 +79,7 @@
                   type="button"
                   data-bs-toggle="dropdown"
                 >
-                  Login
+                  <i class="fa-solid fa-right-to-bracket"></i> Login
                 </button>
                 <ul class="dropdown-menu bg-opacity-75 bg-dark">
                   <li>
@@ -188,13 +195,17 @@
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0" onclick="playSound()">
             <i class="bi-phone fs-2 mb-3 text-muted"></i>
             <div><a href="tel:+7 (7172) 12 55 55">+7 (7172) 12 55 55</a></div>
           </div>
-          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0" id="email">
             <i class="bi-envelope fs-2 mb-3 text-muted"></i>
-            <div><a href="mailto:abzalorazbek2003@gmail.com">abzalorazbek2003@gmail.com</a></div>
+            <div>
+              <a href="mailto:abzalorazbek2003@gmail.com"
+                >abzalorazbek2003@gmail.com</a
+              >
+            </div>
           </div>
           <div class="col-lg-4 text-center mb-5 mb-lg-0">
             <i class="bi-telegram fs-2 mb-3 text-muted"></i>
@@ -241,6 +252,15 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1a3bfbfb0f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
