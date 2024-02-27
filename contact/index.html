@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <title>Examination System</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -30,8 +30,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/animation.css" />
 
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body id="page-top">
     <nav
@@ -40,7 +41,7 @@
     >
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="#page-top">
-          <img src="assets/img/icon-inverse.png" alt="..." />
+          <img src="../assets/img/icon-inverse.png" alt="..." />
           Examination System
         </a>
         <button
@@ -57,17 +58,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                ><i class="fa-solid fa-home"></i>    Home</a
+              <a class="nav-link" href="../"
+                ><i class="fa-solid fa-home"></i> Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="clients.html">
-                <i class="fa-solid fa-user"></i>    Our Clients</a>
+              <a class="nav-link" href="../clients">
+                <i class="fa-solid fa-user"></i> Our Clients</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <i class="fa-solid fa-phone"></i>    Contact</a>
+              <a class="nav-link" href="../contact">
+                <i class="fa-solid fa-phone"></i> Contact</a
+              >
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -76,7 +79,7 @@
                   type="button"
                   data-bs-toggle="dropdown"
                 >
-                <i class="fa-solid fa-right-to-bracket"></i>    Login
+                  <i class="fa-solid fa-right-to-bracket"></i> Login
                 </button>
                 <ul class="dropdown-menu bg-opacity-75 bg-dark">
                   <li>
@@ -104,123 +107,116 @@
       </div>
     </nav>
 
-    <header class="masthead masthead-clients">
+    <header class="masthead masthead-contact">
       <div class="container px-4 px-lg-5 h-100">
         <div
           class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
         >
           <div class="col-lg-8 align-self-end">
-            <h1 class="text-white font-weight-bold">Check out our clients</h1>
+            <h1 class="text-white font-weight-bold">
+              Contact our support team
+            </h1>
             <hr class="divider" />
           </div>
           <div class="col-lg-8 align-self-baseline">
             <p class="text-white-75 mb-5">
-              These companies use our product and are satisfied with it
+              Our support team can help you with any questions you may have.
             </p>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="page-section bg-primary" id="clients">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/clients/nis.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <img
-                class="w-25 h-25"
-                src="assets/img/clients/nis-logo.png"
-                alt="..."
-              />
-              <p class="text-black">Nazarbayev Intellectual Schools</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/clients/NSPhM.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <img
-                class="w-25 h-25"
-                src="assets/img/clients/NSPhM-logo.png"
-                alt=""
-              />
-              <p>National School of Physics and Mathematics</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/clients/BIL.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <img
-                class="w-25 h-25"
-                src="assets/img/clients/BIL-logo.png"
-                alt="..."
-              />
-              <p>Bilim-Innovation School</p>
-            </div>
+    <section class="page-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">Contact form</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">
+              Need help? Fill out the form below and our support team will get
+              your message.
+            </p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <form id="contactForm">
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required
+                />
+                <label for="name">Full name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="mail@mail.kz"
+                  required
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="+7 (777) 777 77 77"
+                  required
+                />
+                <label for="phone">Phone number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary btn-xl"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0" onclick="playSound()">
+            <i class="bi-phone fs-2 mb-3 text-muted"></i>
+            <div><a href="tel:+7 (7172) 12 55 55">+7 (7172) 12 55 55</a></div>
+          </div>
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-envelope fs-2 mb-3 text-muted"></i>
+            <div>
+              <a href="mailto:abzalorazbek2003@gmail.com"
+                >abzalorazbek2003@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-telegram fs-2 mb-3 text-muted"></i>
+            <div><a href="https://t.me/abzal_orazbek">@abzal_orazbek</a></div>
+          </div>
+        </div>
       </div>
     </section>
-
     <footer class="bg-light py-5">
       <div class="container px-4 px-lg-5">
-        <div class="small text-center text-muted">
+        <div class="small text-center text-muted" id="copyright">
           Copyright &copy; 2023 - Examination System
         </div>
       </div>
@@ -261,8 +257,10 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/1a3bfbfb0f.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/1a3bfbfb0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
